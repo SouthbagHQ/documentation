@@ -1,0 +1,4 @@
+{
+  "title": "Configuration",
+  "pages": ["files", "trust", "auth"]
+}

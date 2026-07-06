@@ -1,0 +1,13 @@
+{
+  "title": "Identity",
+  "root": true,
+  "pages": [
+    "index",
+    "access",
+    "dashboard",
+    "security",
+    "developer",
+    "consent",
+    "lifecycle"
+  ]
+}

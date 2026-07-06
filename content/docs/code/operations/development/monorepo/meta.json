@@ -1,0 +1,4 @@
+{
+  "title": "Monorepo",
+  "pages": ["packages", "checks", "source-run"]
+}

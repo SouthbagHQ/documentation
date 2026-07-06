@@ -1,0 +1,4 @@
+{
+  "title": "Install",
+  "pages": ["npm", "uninstall", "binary-name"]
+}

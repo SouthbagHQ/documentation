@@ -1,0 +1,13 @@
+{
+  "title": "Code",
+  "root": true,
+  "pages": [
+    "index",
+    "getting-started",
+    "daily-use",
+    "sessions",
+    "configuration",
+    "extensibility",
+    "operations"
+  ]
+}

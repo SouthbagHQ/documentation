@@ -1,0 +1,4 @@
+{
+  "title": "Consent",
+  "pages": ["trusted", "untrusted", "denial"]
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Agent Actions",
+  "pages": ["hold", "disconnect", "page-effects", "redirects"]
+}

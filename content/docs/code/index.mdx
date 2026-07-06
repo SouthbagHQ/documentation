@@ -1,0 +1,40 @@
+---
+title: Code
+description: User documentation for Southbag Code.
+---
+
+Southbag Code is a terminal coding agent distributed as `@southbag/code`. It runs from the installed package entrypoint and stores its state under `~/.southbag-code`.
+
+Southbag Code runs in a local project directory, reads context files, calls models, uses tools such as file read, file edit, file write, and shell execution, and saves sessions so work can continue later. It is powerful because it is local. It is also powerful because it is local.
+
+## What It Does
+
+- Runs an interactive terminal coding session.
+- Accepts one-shot prompts in print mode.
+- Reads referenced files and images.
+- Runs shell commands.
+- Edits and writes files.
+- Saves and resumes session history.
+- Loads project instructions from `AGENTS.md` or `CLAUDE.md`.
+- Loads extensions, skills, prompt templates, themes, and packages.
+- Exports or shares sessions.
+
+## Core Tools
+
+By default, Southbag Code gives the model built-in tools for:
+
+- `read`
+- `write`
+- `edit`
+- `bash`
+
+Read-only helper tools such as `grep`, `find`, and `ls` can also be enabled through tool options. These tools operate with the permissions of the process that started the CLI.
+
+## Names and Storage
+
+Use these names in the user-facing documentation:
+
+- Package: `@southbag/code`
+- Display title: `Southbag Code`
+- Global config directory: `~/.southbag-code`
+- Project config directory: `.southbag-code`

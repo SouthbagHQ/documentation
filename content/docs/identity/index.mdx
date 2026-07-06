@@ -1,0 +1,28 @@
+---
+title: Identity
+description: User documentation for Southbag Identity.
+---
+
+Southbag Identity is the authentication authority for Southbag services. It manages email login, registration, two-factor authentication, active sessions, account deletion, OAuth applications, consent dialogues, and the connected apps that may request identity, money, account access, or other scopes.
+
+The application opens at `/` and redirects to `/home`. If you are not signed in, protected pages redirect to `/login`. Southbag does not negotiate this. It remembers who is allowed past the door.
+
+## Main Areas
+
+- **Login**: sign in, register, or complete two-factor authentication.
+- **Home**: review authorized apps attached to your identity.
+- **Account**: inspect your profile, email state, password state, creation time, and login methods.
+- **Security**: enable or disable two-factor authentication, view active sessions, and review connected OAuth apps.
+- **Developer**: create, edit, and delete OAuth/OIDC client applications.
+- **Consent**: approve or deny OAuth requests, with additional warnings for untrusted apps.
+- **Account deletion**: delete your user account and leave Kevin disappointed.
+
+## Product Posture
+
+Southbag Identity presents itself as a serious identity provider. It also phrases many operations as if the institution knows exactly how much trust you should have. Some apps are "trusted by Kevin." Some are not. New apps begin untrusted unless the backend decides otherwise.
+
+That distinction matters. Trusted apps can pass through consent quickly. Untrusted apps must make the user endure the full warning ceremony.
+
+## Stored State
+
+Identity state is backed by Better Auth, Drizzle, and Cloudflare D1. Sessions, accounts, OAuth clients, OAuth consents, and Southbag trust metadata are database-backed. The browser receives cookies and session state sufficient to keep you inside the dashboard until you sign out, delete the account, or the session expires.

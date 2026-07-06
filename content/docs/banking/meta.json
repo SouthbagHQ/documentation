@@ -1,0 +1,13 @@
+{
+  "title": "Banking",
+  "root": true,
+  "pages": [
+    "index",
+    "training",
+    "access",
+    "dashboard",
+    "support",
+    "places",
+    "governance"
+  ]
+}

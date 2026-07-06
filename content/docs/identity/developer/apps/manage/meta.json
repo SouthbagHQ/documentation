@@ -1,0 +1,4 @@
+{
+  "title": "Manage",
+  "pages": ["edit", "delete", "ownership"]
+}
